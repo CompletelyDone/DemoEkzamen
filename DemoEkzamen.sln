@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{CD98FB76-11B9-45A0-BA8F-B773C9969D21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "РусскаяКосметика.Тесты", "РусскаяКосметика.Тесты\РусскаяКосметика.Тесты.csproj", "{C6746934-B9F7-4267-BA4A-E4823889F816}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SF2022User13Lib.dll", "SF2022User13Lib.dll\SF2022User13Lib.dll.csproj", "{E84107B7-60E9-417B-874F-737A7861306F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{CD98FB76-11B9-45A0-BA8F-B773C9969D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD98FB76-11B9-45A0-BA8F-B773C9969D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD98FB76-11B9-45A0-BA8F-B773C9969D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6746934-B9F7-4267-BA4A-E4823889F816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6746934-B9F7-4267-BA4A-E4823889F816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6746934-B9F7-4267-BA4A-E4823889F816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6746934-B9F7-4267-BA4A-E4823889F816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E84107B7-60E9-417B-874F-737A7861306F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84107B7-60E9-417B-874F-737A7861306F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84107B7-60E9-417B-874F-737A7861306F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84107B7-60E9-417B-874F-737A7861306F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

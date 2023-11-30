@@ -36,7 +36,7 @@
             <Label Content="Введите Номер Паспорта"/>
             <TextBox x:Name="НомерПаспорта"/>
             <Label Content="Введите Дату Рождения"/>
-            <TextBox x:Name="ДатаРождения"/>
+            <CalendarButton x:Name="ДатаРождения"/>
             <Label Content="Введите Адрес"/>
             <TextBox x:Name="Адрес"/>
             <Label Content="Введите Email"/>
