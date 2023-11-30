@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class DBContext
+    public class DBCont
     {
         public DBCosmetiqueEntities db = new DBCosmetiqueEntities();
     }

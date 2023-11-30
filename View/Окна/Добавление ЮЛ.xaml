@@ -1,0 +1,63 @@
+﻿<Window x:Class="View.Окна.Добавление_ЮЛ"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View.Окна"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="Добавление ЮЛ" Height="650" Width="400">
+    <Window.Resources>
+        <Style TargetType="Window">
+            <Setter Property="Background" Value="Beige"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Aquamarine"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Row="0">
+            <Label Content="Введите Название Компании"/>
+            <TextBox x:Name="НазваниеКомпании"/>
+            <Label Content="Введите Адрес"/>
+            <TextBox x:Name="Адрес"/>
+            <Label Content="Введите ИНН"/>
+            <TextBox x:Name="ИНН"/>
+            <Label Content="Введите РС"/>
+            <TextBox x:Name="РС"/>
+            <Label Content="Введите БИК"/>
+            <TextBox x:Name="БИК"/>
+            <Label Content="Введите ФИО Руководителя"/>
+            <TextBox x:Name="ФИОРуководителя"/>
+            <Label Content="Введите ФИО Контактного лица"/>
+            <TextBox x:Name="ФИОКонтЛица"/>
+            <Label Content="Введите Телефон Контактного лица"/>
+            <TextBox x:Name="ТелефонКонтЛица"/>
+            <Label Content="Введите Email"/>
+            <TextBox x:Name="Email"/>
+            <Label Content="Введите Пароль"/>
+            <TextBox x:Name="Пароль"/>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Content="Добавить" Grid.Column="0" Click="OnAddButtonPressed"/>
+            <Button Content="Выйти" Grid.Column="1" Click="OnExitButtonPressed"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,13 +1,12 @@
-﻿<Window x:Class="View.Окна.Формирование_заказа"
+﻿<Window x:Class="View.Окна.Добавление_ФЛ"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:View" 
-        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:View.Окна"
         mc:Ignorable="d"
-        MinHeight="450" MinWidth="400" MaxWidth="700" MaxHeight="800"
-        Title="Русская косметика. Формирование заказа" Height="450" Width="400">
+        ResizeMode="NoResize"
+        Title="Добавление ФЛ" Height="500" Width="400">
     <Window.Resources>
         <Style TargetType="Window">
             <Setter Property="Background" Value="Beige"/>
@@ -29,33 +28,30 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
-
         <StackPanel Orientation="Vertical" Grid.Row="0">
-            <Label Content="Введите код лабораторного сосуда"/>
-            <TextBox ToolTip="324923"/>
-            <Label Content="Выберите заказчика"/>
-            <ComboBox SelectedIndex="0">
-                <sys:String>Физическое лицо</sys:String>
-                <sys:String>Юридическое лицо</sys:String>
-            </ComboBox>
-            <Label Content="Введите ФИО или название компании, услуги"/>
-            <TextBox />
+            <Label Content="Введите ФИО"/>
+            <TextBox x:Name="ФИО"/>
+            <Label Content="Введите Серию Паспорта"/>
+            <TextBox x:Name="СерияПаспорта"/>
+            <Label Content="Введите Номер Паспорта"/>
+            <TextBox x:Name="НомерПаспорта"/>
+            <Label Content="Введите Дату Рождения"/>
+            <TextBox x:Name="ДатаРождения"/>
+            <Label Content="Введите Адрес"/>
+            <TextBox x:Name="Адрес"/>
+            <Label Content="Введите Email"/>
+            <TextBox x:Name="Email"/>
+            <Label Content="Введите Пароль"/>
+            <TextBox x:Name="Пароль"/>
         </StackPanel>
-
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
-                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0">
-                <TextBlock Text="Добавить Клиента" TextWrapping="Wrap"/>
-            </Button>
-            <Button Grid.Column="1">
-                <TextBlock Text="Сформировать заказ" TextWrapping="Wrap"/>
-            </Button>
-            <Button Content="Выход" Grid.Column="2"/>
+            <Button Content="Добавить" Grid.Column="0" Click="OnAddButtonPressed"/>
+            <Button Content="Выйти" Grid.Column="1" Click="OnExitButtonPressed"/>
         </Grid>
     </Grid>
 </Window>
